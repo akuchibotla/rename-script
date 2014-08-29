@@ -102,5 +102,6 @@ Folder
 - Hawaii_Trip_32_Photos.PNG
 
 Enjoy!
+------
     
 Note: No further development for this script is planned unless specifically requested.
