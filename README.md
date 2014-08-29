@@ -12,16 +12,16 @@ Features
 Usage
 -----
 - When you want to rename every file within a folder in numeric order as they are already named:
-python rename-script.py ~/Folder
+`python rename-script.py ~/Folder`
 
 - When you want to add a prefix to each rename
-python rename-script.py ~/Folder prefix
+`python rename-script.py ~/Folder prefix`
 
 - When you want to add a suffix to each rename
-python rename-script.py '' suffix
+`python rename-script.py '' suffix`
 
 - When you want to add a prefix and a suffix to each rename
-python rename-script.py prefix suffix
+`python rename-script.py prefix suffix`
 
 Example
 -------
@@ -64,9 +64,9 @@ Folder
 - DCIM_19.PNG
 - DCIM_20.PNG
     
-  Simply running "python rename-script.py ~/Folder Hawaii_Trip_ _Photos" will result in a much cleaner looking folder:
+Simply running `python rename-script.py ~/Folder Hawaii_Trip_ _Photos` will result in a much cleaner looking folder:
   
-  Folder
+Folder
 - Hawaii_Trip_0_Photos.PNG
 - Hawaii_Trip_1_Photos.PNG
 - Hawaii_Trip_2_Photos.PNG
