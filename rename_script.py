@@ -1,6 +1,9 @@
 import sys
 import os
 
+prefix = ""
+suffix = ""
+
 if len(sys.argv) < 2:
 	raise SystemExit("Insufficient Arguments: must provide an argument\n\nCorrect Format:\npython <path to script>/rename_script.py <path to files to be renamed> <optional prefix> <optional suffix>")
 
@@ -11,7 +14,7 @@ elif len(sys.argv) == 4:
 	prefix = sys.argv[2]
 	suffix = sys.argv[3]
 
-else:
+elif len(sys.argv) > 4:
 	raise SystemExit("Insufficient Arguments: must provide at most 3 arguments in order\n\nCorrect Format:\npython <path to script>/rename_script.py <path to files to be renamed> <optional prefix> <optional suffix>")
 
 path = str(sys.argv[1])
@@ -30,7 +33,7 @@ for f in files:
 			extention = "." + f[::-1][:i][::-1]
 	if path[-1] != "/":
 		path += "/"
-	bash_command = "mv " + path + f + " " + path + str(counter) + extention
+	bash_command = "mv " + path + f + " " + path + prefix + str(counter) + suffix + extention
 	print bash_command
 	val = os.system(bash_command)
 	if val != 0:
