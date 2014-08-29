@@ -100,5 +100,7 @@ Folder
 - Hawaii_Trip_30_Photos.PNG
 - Hawaii_Trip_31_Photos.PNG
 - Hawaii_Trip_32_Photos.PNG
+
+Enjoy!
     
-No further development for this script is planned unless specifically requested.
+Note: No further development for this script is planned unless specifically requested.
